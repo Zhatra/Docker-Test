@@ -1,0 +1,19 @@
+name: stack-demo
+
+on: # specify the build to trigger the automated ci/cd
+  push:
+    branches:
+      - "main"
+
+jobs:
+
+  test:
+    name: Test function hello_world
+    runs-on: ubuntu-latest # specify the build machine
+    steps:
+      - name: Run assert checks
+        uses: actions/checkout@v4
+      - run: |
+          sh hello_world.sh
+          exit 1
+
