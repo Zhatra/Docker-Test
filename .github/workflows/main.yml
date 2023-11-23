@@ -36,4 +36,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: $/stack-demo:latest
+          tags: zhatra/stack-demo:latest
