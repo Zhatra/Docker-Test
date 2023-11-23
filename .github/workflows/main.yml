@@ -3,7 +3,7 @@ name: stack-demo
 on: # specify the build to trigger the automated ci/cd
   push:
     branches:
-      - "main"
+      - "master"
 
 jobs:
 
@@ -15,5 +15,3 @@ jobs:
         uses: actions/checkout@v4
       - run: |
           sh hello_world.sh
-          exit 1
-
